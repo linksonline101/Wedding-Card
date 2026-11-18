@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit & Shikha Wedding Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #fbf8f1;
+            color: #5c1a1b;
+            font-family: 'Georgia', serif;
+            overflow-x: hidden;
+        }
+
+        .section-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .animate-left {
+            transform: translateX(-100px);
+            transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .animate-right {
+            transform: translateX(100px);
+            transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .in-view .animate-left, .in-view .animate-right {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .scroll-out {
+            transform: translateY(-150px);
+            opacity: 0 !important;
+            transition: all 1s ease-out;
+        }
+
+        .golden-text {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Namaskar -->
+    <div class="section-container" id="slide1">
+        <div class="animate-left text-center">
+            <h1 class="text-3xl mb-6 font-bold">॥ ॐ ॥</h1>
+            <svg class="w-48 h-48 mx-auto mb-6 text-[#5c1a1b]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+            </svg>
+            <h2 class="text-2xl font-medium tracking-widest">ॐ Shanti ॐ</h2>
+        </div>
+    </div>
+
+    <!-- Slide 2: Main Invite -->
+    <div class="section-container border-t border-[#bf953f]" id="slide2">
+        <div class="animate-right text-center max-w-2xl">
+            <p class="text-xl mb-4">॥ श्री गणेशाय नमः ॥</p>
+            <p class="mb-8 text-sm md:text-base italic">सर्व मंगल मांगल्ये शिवे सर्वार्थ साधिके । शरण्ये त्र्यम्बके गौरी नारायणि नमोस्तुते ॥</p>
+            
+            <h3 class="text-2xl mb-2">Smt. Paramjeet & Sh. Harish</h3>
+            <p class="mb-8">Invite you to celebrate the auspicious Wedding Ceremony of their beloved Son</p>
+            
+            <h1 class="text-6xl md:text-8xl golden-text mb-4 font-serif">Mohit</h1>
+            <p class="text-sm mb-6">(Grand S/o Late Smt. Sangeeta Rani & Sh. Tilak Raj Bharara)</p>
+            
+            <p class="text-2xl italic mb-6">Weds</p>
+            
+            <h1 class="text-6xl md:text-8xl golden-text mb-4 font-serif">Shikha</h1>
+            <p class="text-sm mb-2">(D/o Late Smt. Asha & Late Sh. Avinash Chandra)</p>
+            <p class="text-sm mb-12">(Grand D/o Late Smt. Sumitra Devi & Late Sh. Ganga Ram)</p>
+        </div>
+    </div>
+
+    <!-- Slide 3: Golden Moments & Events -->
+    <div class="section-container border-t border-[#bf953f]" id="slide3">
+        <div class="animate-left text-center w-full max-w-2xl">
+            <h2 class="text-4xl md:text-5xl golden-text mb-12 italic">Golden Moments</h2>
+            
+            <div class="space-y-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Wednesday, 02nd December, 2026</h3>
+                    <div class="flex justify-between items-center border-b border-dotted border-[#5c1a1b] pb-2">
+                        <span class="text-xl">Sagan Ceremony</span>
+                        <span class="text-xl">10:00 Am</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Thursday, 03rd December, 2026</h3>
+                    <div class="flex justify-between items-center border-b border-dotted border-[#5c1a1b] pb-2">
+                        <span class="text-xl">Dj Night</span>
+                        <span class="text-xl">07:00 Pm</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Friday, 04th December, 2026</h3>
+                    <div class="flex justify-between items-center border-b border-dotted border-[#5c1a1b] pb-2 mb-4">
+                        <span class="text-xl">Sehrabandi</span>
+                        <span class="text-xl">5:00 pm</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-dotted border-[#5c1a1b] pb-2">
+                        <span class="text-xl">Ghurchadi</span>
+                        <span class="text-xl">6:00 pm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Venue & RSVP -->
+    <div class="section-container border-t border-[#bf953f]" id="slide4">
+        <div class="animate-right text-center max-w-2xl">
+            <h3 class="text-3xl mb-6 font-bold">Venue</h3>
+            <h2 class="text-4xl golden-text mb-4">The Rosario A Luxury Banquet</h2>
+            <p class="text-lg mb-12">A-1/23 opp dashrath puri Metro Station gate no-1 Dwarka<br>sector -1A Palam Dabri road New Delhi-110046</p>
+            
+            <div class="bg-[#5c1a1b] text-[#fbf8f1] p-6 rounded-lg mb-12">
+                <p class="text-lg italic font-bold">Dhol tashe huye purane Dj ka zamana hai,</p>
+                <p class="text-lg font-bold">Mele Chachu ki shadi main jalul jalul aana hai : Shivika Bharara</p>
+            </div>
+
+            <div class="flex justify-between text-left mt-12 pt-8 border-t border-[#bf953f]">
+                <div>
+                    <h4 class="font-bold text-xl mb-2">R.S.V.P.</h4>
+                    <p>Manish Bharara</p>
+                </div>
+                <div class="text-right">
+                    <h4 class="font-bold text-xl mb-2">With Best Compliments From:</h4>
+                    <p>Dadke & Nanke</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section-container');
+        
+        // Intersection Observer for Slide In
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    entry.target.classList.remove('scroll-out');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(section => observer.observe(section));
+
+        // Scroll listener for Slide Out Upwards
+        window.addEventListener('scroll', () => {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                // If section is scrolled past the top quarter of the screen, move it up and fade out
+                if (rect.top < -50 && rect.bottom > 0) {
+                    section.classList.add('scroll-out');
+                } else if (rect.top >= -50) {
+                    section.classList.remove('scroll-out');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
